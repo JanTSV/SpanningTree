@@ -1,0 +1,8 @@
+A=7; // Und der auch
+B=3;    C=5;
+D = 1;
+// Das ist ein Kommentar
+B-A:1;
+A-D:5;
+D-C:2;
+C-B:1;
