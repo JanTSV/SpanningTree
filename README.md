@@ -8,9 +8,9 @@ Einrichtung:
 
 Der Graph wird in Form einer txt-Datei eingelesen. Der Name der Datei entspricht dem Namen des Graphen im Programm. Die Syntax dieser Datei sieht folgendermaßen aus:
 	<ul>
-		<li>Knoten:<br> '<Knoten-Name>' = '<Knoten-ID>'; </li>
-		<li>Kante:<br> '<Knoten-Name_1>' - '<Knoten-Name_2>' : '<Kosten>'; </li>
-		<li>Kommentare:<br> // '<Kommentar>' </li>
+		<li>Knoten:<br> <Knoten-Name> = <Knoten-ID>; </li>
+		<li>Kante:<br> <Knoten-Name_1> - <Knoten-Name_2> : <Kosten>; </li>
+		<li>Kommentare:<br> // <Kommentar> </li>
 	</ul>
 
 
