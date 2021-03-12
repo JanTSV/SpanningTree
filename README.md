@@ -46,7 +46,7 @@ Folgende Parameter stehen dem Benutzer zur Verfügung:
 	<ul>
 		<li> `--help`: Zeigt die Hilfe an. </li>
 		<li> `--file <Dateipfad>:` Pfad zur Graph-Datei. Default: beispiel_2.txt </li>
-		<li> `--verbose`: Nach jedem Berechnungsschritt wird der aktuelle Graph angezeigt und der Benutzer muss das Programm manuell fortsetzen. </li>
+		<li> `--verbose`: Nach jedem Berechnungsschritt wird der aktuelle Graph angezeigt und der/die Benutzer/in muss das Programm manuell fortsetzen. </li>
 		<li> `--minimum <Schritte>`: Minimale Anzahl an versendeten Nachrichten pro Knoten. Default = 0 => Anzahl an Knoten. </li>
 	</ul>
  
