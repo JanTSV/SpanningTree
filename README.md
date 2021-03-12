@@ -5,12 +5,9 @@ Einrichtung:
 	* main.py ausführen mit gewünschten Parametern (siehe unten).
 
 Der Graph wird in Form einer txt-Datei eingelesen. Der Name der Datei entspricht dem Namen des Graphen im Programm. Die Syntax dieser Datei sieht folgendermaßen aus:
-	* Knoten: 
-	   <Knoten-Name> = <Knoten-ID>;
-	* Kante:
-	   <Knoten-Name_1> - <Knoten-Name_2> : <Kosten>;
-	* Kommentare:
-	   // <Kommentar>
+	* Knoten: <Knoten-Name> = <Knoten-ID>;
+	* Kante: <Knoten-Name_1> - <Knoten-Name_2> : <Kosten>;
+	* Kommentare: // <Kommentar>
 	
 	Beispiel:
 	A = 5;
@@ -19,7 +16,6 @@ Der Graph wird in Form einer txt-Datei eingelesen. Der Name der Datei entspricht
  	D = 7;
  	E = 6;
 	F = 4;
-
 	A - B : 10;
  	A - C : 10;
  	B - D : 15;
