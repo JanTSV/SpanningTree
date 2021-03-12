@@ -7,15 +7,13 @@ Einrichtung:
 Der Graph wird in Form einer txt-Datei eingelesen. Der Name der Datei entspricht dem Namen des Graphen im Programm. Die Syntax dieser Datei sieht folgendermaßen aus:
 	* Knoten: 
 	   <Knoten-Name> = <Knoten-ID>;
-	
 	* Kante:
 	   <Knoten-Name_1> - <Knoten-Name_2> : <Kosten>;
-
 	* Kommentare:
 	   // <Kommentar>
-
+	
 	Beispiel:
-	`A = 5;
+	A = 5;
  	B = 1;
  	C = 3;
  	D = 7;
@@ -30,7 +28,7 @@ Der Graph wird in Form einer txt-Datei eingelesen. Der Name der Datei entspricht
  	C - E : 10;
  	D - E : 2;
  	D - F : 10;
- 	E - F : 2;`
+ 	E - F : 2;
 
 Dabei gelten folgende Regeln:
 	* Die Knotennamen bestehen aus alphanumerischen Zeichen.
