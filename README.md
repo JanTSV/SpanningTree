@@ -1,4 +1,4 @@
-Berechnet den minimalen Spanning Tree eines Graphen über ein Zufallsprinzip. Es handelt sich um eine Konsolenanwendung. Programmiert wurde in python.
+Berechnet den minimalen Spanning Tree eines Graphen mithilfe eines Zufallsprinzips. Es handelt sich um eine Konsolenanwendung. Programmiert wurde in python.
 
 Einrichtung: 
 	<ul>
@@ -33,19 +33,19 @@ Der Graph wird in Form einer txt-Datei eingelesen. Der Name der Datei entspricht
 
 Dabei gelten folgende Regeln:
 	<ul>
-		<li> Die Knotennamen bestehen aus alphanumerischen Zeichen. </li>
+		<li> Die Knotennamen bestehen aus alphanumerischen Zeichen + Unterstrich. </li>
 		<li> Kanten- und Knotendefinitionen dürfen beliebig vermischt sein. </li>
 		<li> Leerzeilen, führende Tabs oder Blanks werden ignoriert. </li>
 		<li> Kosten dürfen keine Werte <= 0 annehmen. </li>
 		<li> Die kleinste Konten-ID (also die Root-ID) darf nur einmal im Graphen vorkommen. </li>
 		<li> Kanten dürfen einen Knoten nicht mit sich selbst verbinden. </li>
-		<li> Es darf keine losen Knoten geben. Jeder Knoten braucht mindestens eine Kanten zum Graphen. </li>
+		<li> Es darf keine losen Knoten geben. Jeder Knoten braucht mindestens eine Kante zum Graphen. </li>
 	</ul>
 
 Folgende Parameter stehen dem Benutzer zur Verfügung:
 	<ul>
 		<li> `--help`: Zeigt die Hilfe an. </li>
-		<li> `--file <Dateipfad>:` Pfad zur Graph-Datei. </li>
+		<li> `--file <Dateipfad>:` Pfad zur Graph-Datei. Default: beispiel_2.txt </li>
 		<li> `--verbose`: Nach jedem Berechnungsschritt wird der aktuelle Graph angezeigt und der Benutzer muss das Programm manuell fortsetzen. </li>
 		<li> `--minimum <Schritte>`: Minimale Anzahl an versendeten Nachrichten pro Knoten. Default = 0 => Anzahl an Knoten. </li>
 	</ul>

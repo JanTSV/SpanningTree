@@ -66,12 +66,15 @@ class Parser:
         if right == None:
             right = self.add_node(self.peek(0).literal, None)
 
-        if not left.has_neighbor(right.name):
+        if left == right:
+            self.error("No edge to itself.")
+
+        if not left.has_neighbor(right):
             left.add_neighbor(right, cost)
         else:
             self.error("Edge already exists.")
 
-        if not right.has_neighbor(left.name):
+        if not right.has_neighbor(left):
             right.add_neighbor(left, cost)
         else:
             self.error("Edge already exists.")

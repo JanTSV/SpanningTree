@@ -11,10 +11,10 @@ class Node:
     def add_neighbor(self, node, cost):
         self.neighbors[node] = {"cost": cost, "enabled": False}
 
-    def has_neighbor(self, name):
+    def has_neighbor(self, node):
         ret = False
         for k in self.neighbors.keys():
-            if k.name == name:
+            if k == node:
                 ret = True
         return ret
 
@@ -53,5 +53,5 @@ class Node:
     def __str__(self):
         s = F"<Node name={self.name} id={self.identifier}>\nAnd my neighbors are: "
         for k, v in self.neighbors.items():
-            s += k.name + F"<{v['cost']}>"
+            s += k.name + F"<{v['cost']}> "
         return s
