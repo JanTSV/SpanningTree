@@ -106,7 +106,6 @@ class Parser:
 
     def check_graph(self):
         ret = True
-
         if len(self.graph) == 0:
             self.error("Pretty empty.")
             return False

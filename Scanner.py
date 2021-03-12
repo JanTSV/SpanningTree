@@ -49,7 +49,7 @@ class Scanner:
         while self.is_digit(self.peek()):
             self.advance()
         text = self.source[self.start:self.current]
-        self.add_token(TokenType.NUMBER, text)
+        self.add_token(TokenType.NUMBER, int(text))
 
     def is_digit(self, c):
         c = ord(c)

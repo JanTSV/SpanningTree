@@ -4,6 +4,7 @@ import click
 
 from Scanner import Scanner
 from Parser import Parser
+from Graph import Graph
 
 
 @click.command()
@@ -23,23 +24,13 @@ def main(file, verbose, minimum):
         scanner = Scanner(f.read())
         tokens = scanner.scan_tokens()
         parser = Parser(tokens)
-        graph = parser.parse()
-        if graph == None or not parser.check_graph():
+        parsed_graph = parser.parse()
+        if parsed_graph == None or not parser.check_graph():
             print("Error occured.")
             return
-        print_graph(file.stem, graph)
-        
-
-def print_graph(name, graph):
-    print("Graph " + name + " {\n// NODES:")
-    for node in graph:
-        print(F"\t{node.name}: {node.identifier}")
-    print("\n// EDGES:")
-    for node in graph:
-        for n in node.neighbors:
-            print(F"\t{node.name} -> {n.name}")
-    print("}")
-
+        graph = Graph(file.stem, parsed_graph)
+        # print(graph)
+        graph.run(verbose, minimum)
         
 if __name__ == "__main__":
     main()
