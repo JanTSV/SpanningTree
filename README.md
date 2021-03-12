@@ -1,14 +1,19 @@
 Berechnet den minimalen Spanning Tree eines Graphen über ein Zufallsprinzip. Es handelt sich um eine Konsolenanwendung. Programmiert wurde in python.
 
 Einrichtung: 
-	* pip install -r requirements.txt
-	* main.py ausführen mit gewünschten Parametern (siehe unten).
+	<ul>
+		<li>pip install -r requirements.txt </li>
+		<li>main.py ausführen mit gewünschten Parametern (siehe unten) </li>
+	</ul>
 
 Der Graph wird in Form einer txt-Datei eingelesen. Der Name der Datei entspricht dem Namen des Graphen im Programm. Die Syntax dieser Datei sieht folgendermaßen aus:
-	* Knoten: <Knoten-Name> = <Knoten-ID>;
-	* Kante: <Knoten-Name_1> - <Knoten-Name_2> : <Kosten>;
-	* Kommentare: // <Kommentar>
-	
+	<ul>
+		<li>Knoten:<br> '<Knoten-Name>' = '<Knoten-ID>'; </li>
+		<li>Kante:<br> '<Knoten-Name_1>' - '<Knoten-Name_2>' : '<Kosten>'; </li>
+		<li>Kommentare:<br> // '<Kommentar>' </li>
+	</ul>
+
+
 	Beispiel:
 	A = 5;
  	B = 1;
@@ -27,6 +32,7 @@ Der Graph wird in Form einer txt-Datei eingelesen. Der Name der Datei entspricht
  	E - F : 2;
 
 Dabei gelten folgende Regeln:
+	<ul>
 	* Die Knotennamen bestehen aus alphanumerischen Zeichen.
 	* Kanten- und Knotendefinitionen dürfen beliebig vermischt sein.
 	* Leerzeilen, führende Tabs oder Blanks werden ignoriert.
@@ -34,6 +40,7 @@ Dabei gelten folgende Regeln:
 	* Die kleinste Konten-ID (also die Root-ID) darf nur einmal im Graphen vorkommen.
 	* Kanten dürfen einen Knoten nicht mit sich selbst verbinden.
 	* Es darf keine losen Knoten geben. Jeder Knoten braucht mindestens eine Kanten zum Graphen.
+	</ul>
 
 Folgende Parameter stehen dem Benutzer zur Verfügung:
 --help: Zeigt die Hilfe an.
