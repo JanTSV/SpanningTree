@@ -45,7 +45,7 @@ Dabei gelten folgende Regeln:
 		<li> Es darf keine losen Knoten geben. Jeder Knoten braucht mindestens eine Kante zum Graphen. </li>
 	</ul>
 
-Folgende Parameter stehen dem Benutzer zur Verfügung:
+Folgende Parameter stehen dem/der Benutzer/in zur Verfügung:
 	<ul>
 		<li> `--help`: Zeigt die Hilfe an. </li>
 		<li> `--file <Dateipfad>:` Pfad zur Graph-Datei. Default: beispiel_2.txt </li>
