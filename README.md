@@ -33,7 +33,7 @@ Der Graph wird in Form einer txt-Datei eingelesen. Der Name der Datei entspricht
 
 Dabei gelten folgende Regeln:
 	<ul>
-		<li> Die Knotennamen bestehen aus alphanumerischen Zeichen + Unterstrich. </li>
+		<li> Die Knotennamen bestehen aus Buchstaben + Unterstrich. </li>
 		<li> Kanten- und Knotendefinitionen dürfen beliebig vermischt sein. </li>
 		<li> Leerzeilen, führende Tabs oder Blanks werden ignoriert. </li>
 		<li> Kosten dürfen keine Werte <= 0 annehmen. </li>

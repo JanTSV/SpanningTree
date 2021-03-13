@@ -21,15 +21,21 @@ def main(file, verbose, minimum):
         return
 
     with open(str(file), "r") as f:
+        # Scan and parse the file
         scanner = Scanner(f.read())
         tokens = scanner.scan_tokens()
         parser = Parser(tokens)
         parsed_graph = parser.parse()
+
+        # Check if parsed graph is correct and exists
         if parsed_graph == None or not parser.check_graph():
             print("Error occured.")
             return
+        
+        # Create the graph object
         graph = Graph(file.stem, parsed_graph)
-        # print(graph)
+        
+        # Start the simulation
         graph.run(verbose, minimum)
         
 if __name__ == "__main__":
