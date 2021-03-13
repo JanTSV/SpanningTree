@@ -1,3 +1,6 @@
+Author: Jan Theil
+Repository: <a href="https://github.com/JanTSV/SpanningTree">SpanningTree | GitHub</a>
+
 Berechnet den minimalen Spanning Tree eines Graphen mithilfe eines Zufallsprinzips. Es handelt sich um eine Konsolenanwendung. Programmiert wurde in python.
 
 Einrichtung: 
